@@ -1,0 +1,5 @@
+package com.brkg.pincode.controller;
+
+public interface PinCodeController {
+
+}

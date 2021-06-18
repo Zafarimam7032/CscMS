@@ -1,0 +1,5 @@
+package com.brkg.service;
+
+public interface BankService {
+
+}

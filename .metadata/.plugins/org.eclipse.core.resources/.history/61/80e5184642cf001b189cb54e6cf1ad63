@@ -1,0 +1,62 @@
+package com.brkg.Vo;
+
+import java.util.Date;
+
+public class BankVo {
+	private long id;
+	private String name;
+	private String address;
+	private Date opeingTime;
+	private Date closingTime;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public Date getOpeingTime() {
+		return opeingTime;
+	}
+	public void setOpeingTime(Date opeingTime) {
+		this.opeingTime = opeingTime;
+	}
+	public Date getClosingTime() {
+		return closingTime;
+	}
+	public void setClosingTime(Date closingTime) {
+		this.closingTime = closingTime;
+	}
+	public BankVo(long id, String name, String address, Date opeingTime, Date closingTime) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.address = address;
+		this.opeingTime = opeingTime;
+		this.closingTime = closingTime;
+	}
+	public BankVo() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "BankVo [id=" + id + ", name=" + name + ", address=" + address + ", opeingTime=" + opeingTime
+				+ ", closingTime=" + closingTime + "]";
+	}
+
+	
+	
+
+}

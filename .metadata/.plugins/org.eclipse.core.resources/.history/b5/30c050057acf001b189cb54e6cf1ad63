@@ -1,0 +1,5 @@
+package com.brkg.bank.controller.imp;
+
+public class BankControllerImp {
+
+}

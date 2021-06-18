@@ -1,0 +1,5 @@
+package com.brkg.bank.repo;
+
+public interface BankRepository {
+
+}

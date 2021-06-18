@@ -1,0 +1,5 @@
+package com.brkg.Vo;
+
+public class PincodeVo {
+
+}

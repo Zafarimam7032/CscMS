@@ -1,0 +1,49 @@
+package com.brkg.bank.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.brkg.bank.Vo.BankVo;
+import com.brkg.bank.service.BankService;
+
+@Service
+public class BankServiceImpl implements BankService{
+
+	@Override
+	public List<BankVo> getAllBank() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<BankVo> getAllBankByPinCode(int pinCode) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BankVo getBankInfo(int IfscCode) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean addBankInfo(BankVo bankVo, int pinCode) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateBankInfo(String ifscCode, BankVo bankVo) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteBankInfo(String ifscCode) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

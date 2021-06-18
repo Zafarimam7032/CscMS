@@ -1,0 +1,58 @@
+package com.brkg.bank.service.impl;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.brkg.bank.Vo.BankVo;
+import com.brkg.bank.repo.BankRepository;
+import com.brkg.bank.service.BankService;
+
+@Service
+public class BankServiceImpl implements BankService {
+	@Autowired
+	private BankRepository bankRepository;
+
+	@Override
+	public List<BankVo> getAllBank() {
+		List<BankVo> allBankInfo = bankRepository.findAll();
+		if (allBankInfo.size() > 0) {
+
+			return allBankInfo;
+		}
+		return null;
+	}
+
+	@Override
+	public List<BankVo> getAllBankByPinCode(int pinCode) {
+		return null;
+	}
+
+	@Override
+	public BankVo getBankInfo(int IfscCode) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean addBankInfo(BankVo bankVo, int pinCode) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateBankInfo(String ifscCode, BankVo bankVo) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteBankInfo(String ifscCode) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

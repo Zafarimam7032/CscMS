@@ -1,0 +1,13 @@
+package com.brkg.bank.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.brkg.bank.Vo.BankVo;
+
+@Repository
+public interface BankRepository extends JpaRepository<BankVo, Long> {
+	public List<BankVo> findByName(String name);
+}

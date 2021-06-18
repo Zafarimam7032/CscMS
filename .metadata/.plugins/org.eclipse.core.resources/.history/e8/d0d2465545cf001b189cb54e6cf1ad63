@@ -1,0 +1,5 @@
+package com.brkg.pincode.repo;
+
+public interface PinCodeRepository {
+
+}
